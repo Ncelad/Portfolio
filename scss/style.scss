@@ -1,0 +1,14 @@
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/navbar";
+
+body{
+    display: flex;
+    margin: auto;
+}
+
+#intro-container{
+    width: 100%;
+    flex-direction: column;
+}
