@@ -68,7 +68,6 @@ video{
     display: flex;
     width: 100%;
     height: $video-height;
-    background-color: #fff;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -97,5 +96,14 @@ video{
 
 #about-container #about-title-container h1{
     text-align: justify;
+}
+
+#quote-container{
+    display: flex;
+    width: 100%;
+    height: $video-height;
+    background-color: #eaeaea;
+    flex-direction: column;
+    justify-content: center;
 }
 
