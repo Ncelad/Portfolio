@@ -16,6 +16,12 @@ body{
     background: black !important;
 }
 
+.content{
+    display: flex;
+    width: 100%;
+    height: $video-height;
+}
+
 #intro-container{
     width: 100%;
     height: $video-height;
@@ -23,8 +29,7 @@ body{
 }
 
 #intro-container .content{
-    width: 100%;
-    height: $video-height;
+    flex-direction: column;
     background: url("../img/viggnete.png");
     position: absolute;
     top: 0;
@@ -65,9 +70,6 @@ video{
 }
 
 #about-container .content{
-    display: flex;
-    width: 100%;
-    height: $video-height;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -107,3 +109,121 @@ video{
     justify-content: center;
 }
 
+
+#skills-container{
+    display: flex;
+    width: 100%;
+    height: $video-height;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills-container .content{
+    padding: 10%;
+    flex-direction: row;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .progressbar svg{
+    width: 100%;
+    height: 100%;
+}
+
+circle{
+    stroke-dasharray: 510;
+    stroke-dashoffset: 510;
+}
+
+.main-circle{
+    fill: #eee;
+    stroke: #eaeaea;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+}
+
+#html .border-circle{
+    fill: none;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke: rgb(0, 119, 255);
+    stroke-dashoffset: calc(705 - (510 * 99)/100);
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+#c .border-circle{
+    fill: none;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke: rgb(93, 0, 180);
+    stroke-dashoffset: calc(605 - (510 * 67)/100);
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+#python .border-circle{
+    fill: none;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke: rgb(0, 190, 10);
+    stroke-dashoffset: calc(570 - (510 * 45)/100);
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+#sql .border-circle{
+    fill: none;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke: rgb(247, 191, 10);
+    stroke-dashoffset: calc(675 - (510 * 87)/100);
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+#photoshop .border-circle{
+    fill: none;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke: rgb(247, 10, 128);
+    stroke-dashoffset: calc(685 - (510 * 100)/100);
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+.percent{
+    position: absolute;
+}
+
+.title{
+    font-family: 'Juri', sans-serif;
+    color: black;
+}
+
+#skills-container #skills-title-container{
+    margin-top: 10%;
+    display: inline-flex;
+    color: $black;
+    font-family: 'Jura', sans-serif;
+}
+
+#skills-container #skills-title-container h1{
+    text-align: justify;
+}
