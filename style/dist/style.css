@@ -325,34 +325,65 @@ body {
 .content {
   display: flex;
   width: 100%;
-  height: 735px;
+  height: 100%;
 }
 
 #intro-container {
   width: 100%;
-  height: 735px;
+  height: 100vh;
+  max-height: 100vh;
   flex-direction: column;
 }
 
 #intro-container .content {
   flex-direction: column;
-  background: url("../img/viggnete.png");
   position: absolute;
+  height: 100vh;
+  max-height: 100vh;
   top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-video {
+.intro {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.intro::after {
+  display: block;
   position: absolute;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 1;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  z-index: 0;
+}
+
+.media video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .content #name-block {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 654px;
+  height: 100%;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .content #name-container {
@@ -361,16 +392,19 @@ video {
   font-family: "Jura", sans-serif;
   border: 4px solid #fff;
   padding: 1%;
+  z-index: 2;
 }
 
 .content #name-container h1 {
   text-align: center;
+  z-index: 2;
 }
 
 #about-container {
   display: flex;
   width: 100%;
-  height: 735px;
+  height: 100vh;
+  max-height: 100vh;
   flex-direction: column;
   align-items: center;
 }
@@ -383,8 +417,9 @@ video {
 }
 
 .card {
-  width: 80%;
-  height: 80%;
+  width: auto;
+  height: auto;
+  max-height: 100%;
   align-items: center;
   text-align: center;
   margin-left: 5%;
@@ -410,7 +445,8 @@ video {
 #quote-container {
   display: flex;
   width: 100%;
-  height: 735px;
+  height: 100vh;
+  max-height: 100vh;
   background-color: #eaeaea;
   flex-direction: column;
   justify-content: center;
@@ -419,7 +455,8 @@ video {
 #skills-container {
   display: flex;
   width: 100%;
-  height: 735px;
+  height: 100vh;
+  max-height: 100vh;
   flex-direction: column;
   align-items: center;
 }
