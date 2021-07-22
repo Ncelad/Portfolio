@@ -12,46 +12,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="intro-container">
-      <div class="intro">
-        <div class="video">
-          <div class="media">
-            <video src="style/video/frame.mp4" autoplay muted loop></video> 
-          </div>
+
+
+    <div id="intro-container">
+      <div class="video">
+          <video id="vid" src="style/video/frame.mp4" autoplay muted loop></video> 
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="style/img/portfolio-logo.png" alt="logo" width="10%" height="10%">
+          </a>
+        </div>
+              <div class="content">
+        <div id="name-container">
+          <h1>Горбачёв Кирилл</h1>
         </div>
       </div>
-      <div class="content">
-        <nav class="navbar navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand" href="#">
-              <img src="style/img/portfolio-logo.png" alt="logo" width="10%" height="10%">
-            </a>
-          </div>
-        </nav>
-        <div id="name-block">
-          <div id="name-container">
-            <h1 class="display-4">Горбачёв Кирилл</h1>
-          </div>
-        </div>
-      </div>
-    </header>
+      </nav>
+    </div>
     <div id="about-container">
       <div id="about-title-container">
-        <h1 class="display-4">Обо мне</h1>
+        <h1>Обо мне</h1>
       </div>
       <div class="content">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img src="style/img/person.svg" class="card-img-top" alt="person">
           <div class="card-body">
             <h5 class="card-title">О себе</h5>
-            <p class="card-text" style="font-size: 10pt;">Приветсвую всех, меня зовут Горбачёв Кирилл. Я занимаюсь разработкой приложений под Windows, а также сайтов. Пишу приложения на языке программирования C# используя такие технологии как: Windows Forms, WPF. Верстка сайтов выполняется мной с использованием Bootstrap что позволяет в короткие строки создавать красивые странички.</p>
+            <p class="card-text">Приветсвую всех, меня зовут Горбачёв Кирилл. Я занимаюсь разработкой приложений под Windows, а также сайтов. Пишу приложения на языке программирования C# используя такие технологии как: Windows Forms, WPF. Верстка сайтов выполняется мной с использованием Bootstrap что позволяет в короткие строки создавать красивые странички.</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img src="style/img/journal-code.svg" class="card-img-top" alt="person">
           <div class="card-body">
             <h5 class="card-title">Мои умения</h5>
-            <p class="card-text" style="font-size: 13.5pt;">Знаю языки программирования C++,C#,Python,SQL; Языки разметки: HTML(5), CSS(3), XAML. А также разбираюсь в таких технологиях как Windows Forms,WPF,Bootstrap.</p>
+            <p class="card-text">Знаю языки программирования C++,C#,Python,SQL; Языки разметки: HTML(5), CSS(3), XAML. А также разбираюсь в таких технологиях как Windows Forms,WPF,Bootstrap.</p>
           </div>
         </div>
       </div>
@@ -124,10 +120,17 @@
       </div>
     </div>
     <div id="portfolio-container">
-        
-    </div>
+
     <footer id="contacts-container">
         
     </footer>
 </body>
+
+<!-- <script type="text/javascript">
+  while(true){
+    var video = document.getElementsById("vid");
+    var height = video.getAttribute()
+    document.getElementById("intro-container").setAttribute("height",video.get);
+  }
+</script> -->
 </html>
