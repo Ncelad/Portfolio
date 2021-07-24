@@ -55,16 +55,23 @@ body{
     z-index: 1;
 }
 
-#intro-container .content #name-container{
+.title-container{
     margin: 0 auto;
-    border: 4px solid #eaeaea;
 }
 
-#intro-container .content #name-container h1{
-    color: #eaeaea;
+.title-container h1{
+    color: #000;
     font-size: 5vw;
     text-align: center;
     font-family: 'Jura',sans-serif;
+}
+
+#intro-container .title-container{
+    border: 0.25vw solid #eaeaea;
+}
+
+#intro-container .title-container h1{
+    color: #eaeaea;
 }
 
 #about-container{
@@ -87,8 +94,8 @@ body{
     align-items: center;
     text-align: center;
     margin-top: 0;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
     padding: 0;
 }
 
@@ -183,54 +190,42 @@ circle{
     stroke-dashoffset: 0;
 }
 
-#html .border-circle{
+.box{
+    width: 20%;
+    height: 50%;
+}
+
+.box .border-circle{
     fill: none;
-    stroke-width: 8px;
+    stroke-width: 0.5vw;
     stroke-linecap: round;
-    stroke: rgb(0, 119, 255);
-    stroke-dashoffset: calc(705 - (510 * 99)/100);
     transform-origin: center;
     transform: rotate(-90deg);
+}
+
+#html .border-circle{
+    stroke: rgb(0, 119, 255);
+    stroke-dashoffset: 94%;
 }
 
 #c .border-circle{
-    fill: none;
-    stroke-width: 8px;
-    stroke-linecap: round;
     stroke: rgb(93, 0, 180);
-    stroke-dashoffset: calc(605 - (510 * 67)/100);
-    transform-origin: center;
-    transform: rotate(-90deg);
+    stroke-dashoffset: 67%;
 }
 
 #python .border-circle{
-    fill: none;
-    stroke-width: 8px;
-    stroke-linecap: round;
     stroke: rgb(0, 190, 10);
-    stroke-dashoffset: calc(570 - (510 * 45)/100);
-    transform-origin: center;
-    transform: rotate(-90deg);
+    stroke-dashoffset: 45%;
 }
 
 #sql .border-circle{
-    fill: none;
-    stroke-width: 8px;
-    stroke-linecap: round;
     stroke: rgb(247, 191, 10);
-    stroke-dashoffset: calc(675 - (510 * 87)/100);
-    transform-origin: center;
-    transform: rotate(-90deg);
+    stroke-dashoffset: 87%;
 }
 
 #photoshop .border-circle{
-    fill: none;
-    stroke-width: 8px;
-    stroke-linecap: round;
     stroke: rgb(247, 10, 128);
-    stroke-dashoffset: calc(685 - (510 * 100)/100);
-    transform-origin: center;
-    transform: rotate(-90deg);
+    stroke-dashoffset: 100%;
 }
 
 .percent{
