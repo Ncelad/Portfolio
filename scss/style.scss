@@ -119,7 +119,13 @@ body{
 
 #about-container .card-img-top{
     margin-top: 5%;
-    width: 15%;
+    width: 20%;
+    height: 40%;
+}
+
+#about-container .code{
+    margin-top: 5%;
+    width: 20%;
     height: 40%;
 }
 
@@ -304,3 +310,12 @@ circle{
     height: 30%;
 }
 
+@media (prefers-color-scheme: dark){
+    .dev{
+        src: url("../style/img/card-icons/dark-theme/developer-dark.png");
+    }
+
+    .code{
+        src: url("../style/img/card-icons/dark-theme/code-dark.png");
+    }
+}
